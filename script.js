@@ -40,7 +40,7 @@ function speak() {
     }
 
     spk.text = text;
-    spk.rate = 0.5;
+    spk.rate = 0.7;
     window.speechSynthesis.speak(spk)
 
 }
@@ -82,7 +82,7 @@ function mic(){
       }
 
       function handleKeyPress(e) {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter'||e.key === 'Next') {
             searchGoogle();
             // Hide the keyboard after search (optional)
             this.blur();
