@@ -76,14 +76,20 @@ function mic(){
     // document.querySelector("#google-search").innerHTML ="hello"
 
     function searchGoogle() {
-        var searchtext = document.getElementsByClassName("searchtext").value;
+        var searchtext = document.querySelector(".searchtext").value;
         var searchUrl = "https://www.google.com/search?q=" + encodeURIComponent(searchtext);
         window.open(searchUrl, '_blank');
       }
 
-      document.querySelector("#google-search").addEventListener("keypress",function(e){
-        if(e.key==='Enter')
-        searchGoogle();
-    else
-    console.log(e);
-      })
+      function handleKeyPress(e) {
+        if (e.key === 'Enter') {
+            searchGoogle();
+            // Hide the keyboard after search (optional)
+            this.blur();
+        }
+        else
+        console.log(e);
+    }
+
+    document.querySelector("#google-search").addEventListener('keyup', handleKeyPress);
+    document.querySelector("#google-search").addEventListener('keypress', handleKeyPress);
