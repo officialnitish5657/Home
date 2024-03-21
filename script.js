@@ -82,7 +82,7 @@ function mic(){
       }
 
       function handleKeyPress(e) {
-        if (e.key === 'Enter'||e.key === 'Next') {
+        if (e.key === 'Enter') {
             searchGoogle();
             // Hide the keyboard after search (optional)
             this.blur();
