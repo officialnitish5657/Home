@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .google {
+    /* border: 2px solid; */
+    position: relative;
+    width: 271px;
+  }
+
+  #google-search {
+    margin: 0 20%;
+    width: 100px;
+    height: 30px;
+    border-radius: 17px;
+    padding: 0 30px;
+    outline: none;
+    border: 0.5px solid #a3948e;
+
+
+  }
+
+  #google-search:hover {
+    box-shadow: 1px 2px 20px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+    border-color: transparent;
+  }
+
+  .mic-icon {
+    position: absolute;
+    right: 68px;
+    top: 8px;
+  }
+
+  .mic-icon:hover {
+    cursor: pointer;
+  }
+
+  .search-icon:hover {
+    cursor: text;
+
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 32px;
+    top: 4px;
+  }
+
+  .container {
+    /* border: 2px solid; */
+    height: 140px;
+    width: 271px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-rows: 70px 70px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .box {
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 10px 0 4px 0;
+  }
+
+  .box:hover {
+    box-shadow: 1px 2px 20px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+    border-color: transparent;
+  }
+
+  .chatbot {
+    width:100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* border:2px solid ; */
+
+  }
+
+
+  
+  #chats {
+    width: 97%;
+    height: 50px;
+    padding: 4px;
+    outline: none;
+    margin: 5px 0;
+    resize: none;
+    border-radius: 9px;
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+  #chats:hover {
+    border-color: #646464;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 2px 20px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+  }
+
+  button {
+    width: 120px;
+    padding: 4px;
+    border-radius: 8px;
+    border-color: transparent;
+    background: #b4b4b4;
+    margin-left: 5px;
+  }
+
+  button:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 2px 20px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+    color: white;
+    background: #646464;
+    cursor: pointer;
+  }
