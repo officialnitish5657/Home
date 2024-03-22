@@ -33,14 +33,14 @@ function speak() {
     let spk = new SpeechSynthesisUtterance();
     spk.leng = "en-US";
     if(speechtext===''){
-        text="plese speech..";
+        text="Enter text to speak..";
     }
     else{
         text=speechtext;
     }
 
     spk.text = text;
-    spk.rate = 0.7;
+    spk.rate = 0.9;
     window.speechSynthesis.speak(spk)
 
 }
@@ -79,6 +79,7 @@ function mic(){
         var searchtext = document.querySelector(".searchtext").value;
         var searchUrl = "https://www.google.com/search?q=" + encodeURIComponent(searchtext);
         window.open(searchUrl, '_blank');
+        document.querySelector(".searchtext").value='';
       }
 
       function handleKeyPress(e) {
@@ -92,4 +93,5 @@ function mic(){
     }
 
     document.querySelector("#google-search").addEventListener('keyup', handleKeyPress);
+    document.querySelector(".search-icon").addEventListener('click', handleKeyPress);
     document.querySelector("#google-search").addEventListener('keypress', handleKeyPress);
